@@ -6,7 +6,7 @@ const catchAsync = require('../utils/catchAsync')
 const AppError = require('../utils/appError');
 const { successHandle } = require('../utils/resHandle.js')
 
-// [GET] 取得所有房型 api/room
+// [GET] 取得所有房型 api/rooms
 const getRoomList = catchAsync(async (req, res, next) => {
 
   const rooms = await Room.find()
