@@ -5,6 +5,8 @@
   "main": "index.js",
   "private": true,
   "scripts": {
+    "backend": "yarn workspace backend run dev",
+    "frontend": "yarn workspace frontend run dev",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -12,8 +14,8 @@
     "url": "git+https://github.com/hobbyling/letsBooking.git"
   },
   "workspaces": [
-    "backend/*",
-    "frontend/*"
+    "backend",
+    "frontend"
   ],
   "keywords": [],
   "author": "",
