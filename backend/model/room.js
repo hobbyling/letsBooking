@@ -29,8 +29,10 @@ const postSchema = new Schema({
       'GuestMax': { type: Number, required: [true, ['房客人數最小限制為必填']] },
       // 床型
       'Bed': {
-        type: Array,
-        required: [true, ['床型為必填']],
+        type: [
+          { type: String }
+        ],
+        required: [true, '床型為必填'],
         enum: ["Single", "Double"]
       },
       // 衛浴數量

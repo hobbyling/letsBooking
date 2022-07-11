@@ -1,4 +1,5 @@
 const { Schema, model, SchemaTypes } = require('mongoose')
+const validator = require('validator')
 
 const orderSchema = new SchemaTypes({
   userId: {
@@ -28,3 +29,6 @@ const orderSchema = new SchemaTypes({
     ref: 'Room'
   }
 })
+
+const Order = model('Order', orderSchema)
+module.exports = Order
