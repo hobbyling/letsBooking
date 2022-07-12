@@ -8,7 +8,8 @@
     "backend": "yarn workspace backend run dev",
     "f2e": "yarn workspace frontend run dev",
     "build": "yarn workspace frontend run build",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "yarn workspace backend run start"
   },
   "repository": {
     "type": "git",
