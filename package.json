@@ -6,8 +6,8 @@
   "private": true,
   "scripts": {
     "backend": "yarn workspace backend run dev",
-    "frontend": "yarn workspace frontend run dev",
-    "install": "yarn workspace frontend run install",
+    "f2e": "yarn workspace frontend run dev",
+    "build": "yarn workspace frontend run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
