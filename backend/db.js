@@ -7,7 +7,7 @@ const DB = process.env.DB_URL.replace(
 
 const connectDB = async () => {
   try {
-    await mongoose.connect(process.env.DB_LOCAL_URL || DB, {
+    await mongoose.connect(DB, {
       serverSelectionTimeoutMS: 300000
     })
     console.log('MongoDB 資料庫連接成功')

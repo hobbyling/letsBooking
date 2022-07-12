@@ -7,5 +7,6 @@ const roomController = require('../controller/room')
 router
   .route('/')
   .get(roomController.getRoomList)
+  .delete(roomController.cancelReserveRooms)
 
 module.exports = router
